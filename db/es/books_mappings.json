@@ -1,0 +1,14 @@
+{
+    "mappings": {
+        "properties": {
+            "book_id": {"type": "keyword"},
+            "title": {"type": "text"},
+            "author": {"type": "text"},
+            "publisher": {"type": "text"},
+            "isbn": {"type": "keyword"},
+            "genre": {"type": "text"},
+            "count": {"type": "integer"},
+            "availability": {"type": "boolean"}
+        }
+    }
+}

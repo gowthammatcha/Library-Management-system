@@ -1,0 +1,18 @@
+{
+    "mappings": {
+        "properties": {
+            "reader_id": {"type": "keyword"},
+            "name": {"type": "text"},
+            "email": {"type": "text"},
+            "books": {
+                "type": "nested",
+                "properties": {
+                    "book_id": {"type": "keyword"},
+                    "issue_date": {"type": "date"},
+                    "return_date": {"type": "date"},
+                    "returned_status": {"type": "boolean"}
+                }
+            }
+        }
+    }
+}
